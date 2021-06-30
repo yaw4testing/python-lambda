@@ -23,6 +23,8 @@ pipeline{
             }
             stage('testing the app'){
                   steps{
+                          withEnv(['DISPLAY=:0']) {
+                                sh '/usr/bin/Xvfb :0 -screen 0 1024x768x24 -fbdir /tmp &'}
                         sh 'firefox myMap.html'
                   }
             }
