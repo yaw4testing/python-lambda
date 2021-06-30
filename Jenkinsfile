@@ -8,6 +8,13 @@ pipeline{
                         userRemoteConfigs: [[url: 'https://github.com/yaw4testing/python-lambda.git']]])
                   }
             }
+            stage('check python and pip version'){
+                  steps{
+                        sh 'python3 --verion'
+                        sh 'pip --version'
+                  
+                  }
+            }
       }
 
 
