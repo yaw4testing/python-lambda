@@ -20,7 +20,11 @@ pipeline{
                         sh 'python3 -m pip install folium'
                         sh 'python3 -m pip install pandas'
                   }
-            
+            }
+            stage('testing the app'){
+                  steps{
+                        sh 'python3 ma.py'
+                  }
             }
       }
 
