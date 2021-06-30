@@ -1,6 +1,6 @@
 import folium
 import pandas
-# pandas.read_csv converts the volcanoes.txt into a data frame
+# pandas.read_csv converts the volcanoes.txt into a data framev3c2
 data = pandas.read_csv("volcanoes.txt")
 lat = list(data["LAT"]) #we convert latitude and longitude column into a list[] for looping
 lon = list(data["LON"])
