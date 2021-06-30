@@ -23,7 +23,7 @@ pipeline{
             }
             stage('testing the app'){
                   steps{
-                        sh 'python3 ma.py'
+                        sh 'python3 ../ma.py'
                   }
             }
       }
