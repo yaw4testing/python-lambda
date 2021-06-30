@@ -17,7 +17,7 @@ pipeline{
             }
             stage('build artifacts'){
                   steps{
-                        sh 'python3 -m pip install fulium && pandas'
+                        sh 'python3 -m pip install folium && pandas'
                   
                   }
             
