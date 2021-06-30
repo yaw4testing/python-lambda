@@ -15,6 +15,13 @@ pipeline{
                   
                   }
             }
+            stage('build artifacts'){
+                  steps{
+                        sh 'python3 -m pip install fulium && pandas'
+                  
+                  }
+            
+            }
       }
 
 
